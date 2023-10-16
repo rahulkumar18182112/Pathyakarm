@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/Student_Routine"
+    android:icon="@drawable/baseline_menu_book_24"
+    android:title="Routine"
+    />
+    <item android:id="@+id/hw"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Home Work"
+        />
+    <item android:id="@+id/Notifications"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Notification"
+        />
+    <item android:id="@+id/qna"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Ask"
+        />
+
+</menu>

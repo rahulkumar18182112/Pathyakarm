@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25sp"
+        android:layout_margin="20sp"
+        android:elevation="25sp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:backgroundTint="#F3F0F0"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="Do you really want to update your profile?"
+            android:gravity="center"
+
+            />
+
+        <EditText
+            android:id="@+id/teacher_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Professional-mail here!!!"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            android:autofillHints=""
+            tools:ignore="VisualLintTextFieldSize" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/no_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#E43535"
+                android:text="No"
+                android:textColor="#000000"
+                tools:ignore="VisualLintButtonSize"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/yes_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#3CB641"
+                android:text="Yes"
+                android:textColor="#311B92"
+                tools:ignore="VisualLintButtonSize"
+                style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

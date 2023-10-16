@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Result_management"
+
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:src="@drawable/baseline_beenhere_24"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select the class:"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/class_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="TouchTargetSizeCheck,VisualLintBounds,DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select the Subject:"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/subject_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
+        </LinearLayout>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the student mail:"
+            android:textStyle="bold"
+
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/student_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:autofillHints=""
+            android:gravity="center"
+            android:hint="Enter the student mail"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the Student's marks:"
+            android:textStyle="bold"
+
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/test_marks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:autofillHints=""
+            android:gravity="center"
+            android:hint="Enter the student marks"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            tools:ignore="VisualLintTextFieldSize" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/update_marks_btn"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F86C62"
+                android:text="Update marks"
+                android:textColor="#263238"
+                tools:ignore="VisualLintButtonSize" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

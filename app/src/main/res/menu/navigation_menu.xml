@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/Student_fee"
+        android:title="Fees"
+        android:icon="@drawable/baseline_menu_book_24"
+        />
+    <item android:id="@+id/Student_attendence"
+        android:title="Attendence"
+        android:icon="@drawable/baseline_menu_book_24"
+        />
+
+    <item android:id="@+id/Student_Routine"
+        android:title="Routine"
+        android:icon="@drawable/baseline_menu_book_24"
+        />
+    <item android:id="@+id/Student_Diary"
+        android:title="Diary"
+        android:icon="@drawable/baseline_menu_book_24"
+        />
+    <item android:id="@+id/Student_Result"
+        android:title="Result"
+        android:icon="@drawable/baseline_menu_book_24"
+        />
+    <item android:id="@+id/Student_Logout"
+        android:title="Logout"
+        android:icon="@drawable/baseline_menu_book_24"
+        />
+
+</menu>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".frag_student.home_fragment"
+    android:orientation="vertical"
+    android:padding="15sp"
+    android:gravity="center"
+    android:background="#F1D2D2"
+    >
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:src="@drawable/ic_launcher_background"
+
+        app:civ_border_width="1sp"
+        app:civ_border_color="@color/black"
+        android:layout_margin="10sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:layout_marginEnd="20sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rahul kumar"
+            android:id="@+id/name"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/father_s_name"
+            android:layout_marginEnd="20sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanjay kumar"
+            android:id="@+id/father_name"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:layout_marginEnd="20sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/class_name"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_marginBottom="10sp"
+        android:gravity="center"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20sp"
+            android:layout_weight="1"
+            android:text="Section" />
+
+        <TextView
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Teacher :"
+            android:layout_marginEnd="20sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SSG"
+            android:id="@+id/class_teacher"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group :"
+            android:layout_marginEnd="20sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A+"
+            android:id="@+id/blood_grp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number :"
+            android:layout_marginEnd="20sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7503617457"
+            android:id="@+id/phone_no"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10sp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:layout_marginEnd="20sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hanuman Mandir kulehra greater Noida 201306"
+            android:id="@+id/address"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+   </LinearLayout>

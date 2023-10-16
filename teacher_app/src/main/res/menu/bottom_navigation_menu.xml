@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/routine"
+        android:title="Routine"
+        android:icon="@drawable/baseline_schedule_24"
+/>
+    <item android:id="@+id/homework"
+        android:title="Manage Homework"
+        android:icon="@drawable/baseline_menu_book_241"
+        />
+    <item android:id="@+id/notifications_teacher"
+        android:title="Notifications"
+        android:icon="@drawable/baseline_notifications_active_24"
+        />
+    <item android:id="@+id/qna_teacher"
+        android:title=" Asked Queries"
+        android:icon="@drawable/baseline_question_mark_24"
+        />
+
+</menu>

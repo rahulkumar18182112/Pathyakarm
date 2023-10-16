@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag_student.Ask_doubt"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9C9A9A"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask your Doubt"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="#0E0E0E"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_question_answer_24"
+            tools:ignore="ImageContrastCheck" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="10sp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the Teacher's name whome you want to ask..."
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/teacher_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="30sp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Enter your Query..."
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/doubt_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="25sp"
+            android:hint="Enter here..."
+            android:inputType="text"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/ask_doubt_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:backgroundTint="#FA4444"
+            android:text="Proceed to Ask..."
+            android:textColor="#212121"
+            tools:ignore="VisualLintButtonSize" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

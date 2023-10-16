@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Update_profile"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Updation"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_wifi_protected_setup_24"
+            tools:ignore="ImageContrastCheck"
+            android:contentDescription="TODO" />
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20sp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25sp"
+        android:elevation="25sp"
+        android:gravity="center"
+        android:outlineSpotShadowColor="@color/black"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warning:"
+            android:textColor="#D32F2F" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3sp"
+            android:text="You can only update your profile picture,phone number and your current address here. For further updation you need to contact Administration..."
+            android:textColor="#8D6E63"
+            tools:ignore="VisualLintLongText" />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/t_profile_pic"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="20sp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="@color/black"
+        tools:ignore="ImageContrastCheck" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your New phone number:"
+        android:layout_margin="8sp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/t_phone_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter your new Phone no..."
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        android:inputType="phone"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your New Address:"
+        android:layout_margin="8sp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/t_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter your new Address..."
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:backgroundTint="#E43535"
+                android:text="Back"
+                android:textColor="#000000"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/update_t_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:backgroundTint="#3CB641"
+                android:text="Proceed"
+                android:textColor="#311B92"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</LinearLayout>
